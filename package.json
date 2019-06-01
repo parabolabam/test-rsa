@@ -1,0 +1,26 @@
+{
+  "name": "rsa-custom",
+  "version": "1.0.0",
+  "description": "rsa",
+  "main": "rsa.js",
+  "scripts": {
+    "install:all": "npm i",
+    "build": "tsc -p tsconfig.json",
+    "encrypt": "npm run build && node --inspect index.js",
+    "decrypt": "npm run build &&"
+  },
+  "keywords": [
+    "crypto"
+  ],
+  "author": "vsorokin",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jasmine": "^3.3.13",
+    "@types/node": "^12.0.4",
+    "typescript": "^3.5.1"
+  },
+  "dependencies": {
+    "ansi-colors": "^3.2.4",
+    "fs": "0.0.1-security"
+  }
+}
